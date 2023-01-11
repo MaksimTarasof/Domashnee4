@@ -51,6 +51,7 @@ public class BonusServiceTest {
         assertEquals(expected, actual);
 
     }
+
     @org.junit.jupiter.api.Test
     public void shouldCalculateForRegisteredAndOve() {
         BonusService service = new BonusService();
@@ -67,6 +68,7 @@ public class BonusServiceTest {
         assertEquals(expected, actual);
 
     }
+
     @org.junit.jupiter.api.Test
     public void shouldCalculateForRegisteredAndO() {
         BonusService service = new BonusService();
