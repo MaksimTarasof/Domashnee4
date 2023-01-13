@@ -25,7 +25,7 @@ public class BonusServiceTest {
         // подготавливаем данные:
         long amount = 1_000_000;
         boolean registered = true;
-        long expected = 1000;
+        long expected = 500;
 
         // вызываем целевой метод:
         long actual = service.calculate(amount, registered);
@@ -53,7 +53,7 @@ public class BonusServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    public void shouldCalculateForUnRegisteredAndOve() {
+    public void shouldCalculateForUnRegisteredAndOve1() {
         BonusService service = new BonusService();
 
         // подготавливаем данные:
@@ -85,6 +85,6 @@ public class BonusServiceTest {
         assertEquals(expected, actual);
 
     }
-    
+
 }
 
